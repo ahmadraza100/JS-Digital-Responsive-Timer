@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    width:100vw;
+    background: rgb(5,3,37);
+    background: linear-gradient(90deg, rgba(5,3,37,1) 0%, rgba(5,2,36,1) 35%, rgba(1,20,41,1) 100%); 
+    justify-content: center;
+    align-items: center;
+}
+
+body > h1{
+    padding:6vh 0vh;
+    font-size:10vh;
+    font-family: 'Courier New', Courier, monospace;
+    color:yellow;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing:.5vw;
+}
+.cbody{
+    width:80vw;
+    height:30vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: .5vw .5vw 1vw rgba(255, 230, 5, 0.541) , -.5vw -.5vw 1vw rgba(255, 230, 5, 0.541);
+    border-radius: 4vw;
+    position: relative;
+    background: rgb(255,235,0);
+    background: linear-gradient(0deg, rgba(255,235,0,1) 0%, rgba(224,180,0,1) 100%); 
+}
+.minutes{
+    margin:10px 3vw;
+    background: rgb(63,253,255);
+    background: linear-gradient(0deg, rgba(63,253,255,1) 0%, rgba(132,141,255,1) 100%);
+    border-radius: 2vw;
+    box-shadow: 3px 3px 10px rgba(105, 98, 98, 0.952) , -3px -3px 10px rgba(105, 98, 98, 0.952) ;
+    color:transparent;
+    -webkit-text-stroke:.5vw white;
+    font-size:5vw;
+    letter-spacing:1vw;
+    font-family: 'Fredoka One', cursive;
+    height:25vw;
+    width:20vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size:10vw;
+    color:transparent;
+    -webkit-text-stroke: 3px rgba(255, 255, 255, 0.212);
+    animation-name: dot;
+    animation-duration:1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+.sec{
+
+    animation-name: sec;
+    animation-duration:1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+
+}
+
+.min{
+
+    animation-name: sec;
+    animation-duration:120s;
+    animation-delay: 0s;
+    animation-iteration-count:infinite;
+}
+
+.hour{
+    animation-name: sec;
+    animation-duration:7200s;
+    animation-delay: 0s;
+    animation-iteration-count:infinite;
+
+}
+
+@keyframes sec{
+    0%{
+        background: rgb(236,2,22);
+        background: linear-gradient(0deg, rgba(236,2,22,1) 0%, rgba(224,0,121,1) 100%); 
+        transition:1s;
+    }
+    100%{
+        background: rgb(42,42,60);
+        background: linear-gradient(0deg, rgba(42,42,60,1) 0%, rgba(54,51,40,1) 100%);
+        transition:1s;
+
+    }
+}
+
+
+@keyframes dot{
+    0%{
+        color: rgb(0, 0, 0);
+    }
+    100%{
+        color: rgb(255, 0, 0);
+    }
+}
